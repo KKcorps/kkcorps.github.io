@@ -1,0 +1,91 @@
+body{
+background-color: #222;
+}
+
+.logo{
+position: absolute;
+float:left;
+}
+
+#cs-text{
+margin-top: 84px;
+}
+
+.cs-text{
+    width: 800px;
+    margin: 70px 24% 30px;
+}
+
+#cs-text-2{
+margin-left: 33% !important;
+} 
+
+.cs-text:before,
+.cs-text:after {
+    content: " ";
+    display: table;
+}
+ 
+.cs-text:after {
+    clear: both;
+}
+
+.cs-text span {
+    float: left;
+    width: 109px;
+    font-size: 90px;
+    line-height: 130px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+    font-family: 'Medula One', cursive;
+    display: block;
+    z-index: 1;
+    position: relative;
+    color: rgba(25,255,255,0.7);
+    text-shadow: 5px 5px 2px rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.05) url(../img/scratch-texture.png);
+    box-shadow: 
+        -6px 2px 10px rgba(0,0,0,0.5), 
+        inset 0 0 0 20px rgba(25, 255, 255, 0.4);
+    border-radius: 5px;
+    transform: skewY(8deg);
+    -webkit-transform: skewY(8deg);
+    -mozilla-transform: skewY(8deg);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+
+.cs-text span:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    box-shadow: 
+        1px 1px 1px rgba(255,255,255,0.4), 
+        inset 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.cs-text span:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    margin-left: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.cs-text span:hover {
+    transform: translateY(-10px) scale(1.1);
+    -webkit-transform: translateY(-10px) scale(1.1);
+    color: rgba(255,255,255,1);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
