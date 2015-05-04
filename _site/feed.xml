@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Clean Blog</title>
+    <title>The Underdog Dev!</title>
     <description>Write your site description here. It will be used as your sites meta description as well!</description>
     <link>http://kkcorps.github.io/</link>
     <atom:link href="http://kkcorps.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 04 May 2015 11:29:20 +0530</pubDate>
-    <lastBuildDate>Mon, 04 May 2015 11:29:20 +0530</lastBuildDate>
+    <pubDate>Mon, 04 May 2015 12:40:51 +0530</pubDate>
+    <lastBuildDate>Mon, 04 May 2015 12:40:51 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
