@@ -1,0 +1,329 @@
+body, h2 {
+  font-family: Roboto;
+  font-weight: 100;
+}
+.navbar {
+  margin: 0;
+}
+.navbar + .navbar {
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+@media all and (min-width: 768px) {
+  .navbar + .navbar .navbar-collapse {
+    padding: 0;
+    margin: 0 -15px;
+    height: auto !important;
+  }
+}
+.navbar.affix {
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.navbar + .container {
+  padding-top: 40px;
+}
+.affix + .container {
+  padding-top: 96px;
+}
+@media all and (min-width: 992px) {
+  header .container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  h1 {
+    padding: 0 !important;
+    margin-right: 15px;
+  }
+  h2 {
+    margin-top: 38px;
+  }
+}
+h2 {
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  font-size: 25px;
+  line-height: 60px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed';
+  text-transform: uppercase;
+  padding-bottom: 2px;
+}
+header .container > div {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
+header p {
+  font-size: 30px;
+  line-height: 41px;
+  width: 63%;
+  margin-bottom: 20px;
+}
+@media all and (max-width: 990px){
+  header p {
+    width: auto;
+    font-size: 27px;
+    line-height: normal;
+  }
+}
+header p a {
+  color: inherit;
+}
+header p a:hover {
+  color: white;
+  text-decoration: none;
+}
+@media all and (min-width: 768px){
+  header p {
+    margin-bottom: 50px;
+  }
+  #tag-filter {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+  }
+}
+#tag-filter a {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  outline: none;
+  display: inline-block;
+}
+#tag-filter a:not(.active):not(:hover) {
+  opacity: 0.5;
+}
+#tag-filter a:after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  height: 3px;
+  left: 15px;
+  right: 15px;
+  background-color: white;
+  border-radius: 2px;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transition: transform 0.3s ease;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  -moz-transition: -moz-transform 0.3s ease;
+}
+#tag-filter a:hover:after {
+  transform: scaleX(0.1);
+  -webkit-transform: scaleX(0.1);
+  -moz-transform: scaleX(0.1);
+}
+#tag-filter a.active:after {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+}
+#projects{
+  text-align: justify;
+  -webkit-backface-visibility: hidden;
+}
+
+#projects .mix,
+#projects .gap{
+  display: inline-block;
+  width: 100%;
+  vertical-align: bottom; /* layout fix for safari */
+}
+
+#projects .mix{
+  display: none;
+}
+#projects:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+@media all and (min-width: 440px){
+  #projects .mix,
+  #projects .gap{
+    width: 49%;
+  }
+}
+
+@media all and (min-width: 768px){
+  #projects .mix,
+  #projects .gap{
+    width: 32%%;
+  }
+}
+
+/* panel */
+.panel {
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+  height: 196px;
+}
+.panel .icon {
+  display: block;
+  width: 35px;
+  height: 35px;
+  font-size: 35px;
+  background-size: 27px auto;
+  background-repeat: no-repeat;
+  color: white;
+  margin-bottom: 10px;
+}
+panel-heading {
+  display: block;
+  padding-bottom: 15px;
+  position: relative;
+}
+panel-heading hr {
+  opacity: 0.2;
+  margin: 15px 0 0;
+  border: 0;
+}
+panel-heading > div {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+title {
+  display: block;
+  font-size: 27px;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+stats {
+  text-align: right;
+  min-width: 70px;
+}
+.panel stats > * {
+  font-size: 14px;
+  white-space: nowrap;
+}
+stats i:before {
+  font-size: 18px;
+}
+forks i:before {
+  margin-right: 0 !important;
+}
+panel-body {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  display: -webkit-box;
+  line-height: 16px;
+  height: 38px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 5px;
+  color: white;
+}
+links {
+  position: absolute;
+  bottom: -77px;
+  right: 0;
+  left: 0;
+  height: 77px;
+  background: white;
+  padding: 0px 15px;
+  text-align: right;
+  color: #717171;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+links a {
+  color: #717171 !important;
+  padding-left: 4px !important;
+  padding-right: 9px !important;
+  margin: 0 !important;
+}
+links i[class^="mdi-"] {
+  font-size: 16px;
+  position: relative;
+  top: 1px;
+  margin-right: 0.2em;
+}
+tags {
+  position: absolute;
+  top: 92px;
+  left: 0;
+  right: 90px;
+  color: white;
+  text-align: left;
+}
+tags button {
+  display: inline-block;
+  padding: 1px 4px;
+  border-radius: 3px;
+  opacity: 0.8;
+  text-transform: lowercase;
+  margin-bottom: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 0;
+  cursor: pointer;
+}
+
+body[data-os="ios"] .panel {
+  cursor: pointer; /* turn hovers into clicks in ios */
+}
+links,
+panel-heading title,
+.panel tags {
+  transition: all 0.15s ease;
+}
+.panel:not(:hover),
+.panel:not(:hover) icon,
+.panel:not(:hover) stars,
+.panel:not(:hover) forks {
+  color: white !important;
+}
+.panel:hover,
+.panel:not(:hover) panel-heading hr {
+  background-color: white !important;
+}
+.panel:hover panel-heading .icon,
+.panel:not(:hover) tags {
+  opacity: 0;
+}
+.panel:hover links{
+  transform: translateY(-77px);
+  -webkit-transform: translateY(-77px);
+}
+.panel:hover panel-heading title,
+.panel:hover panel-heading tags {
+  transform: translateY(-45px);
+  -webkit-transform: translateY(-45px);
+}
+.site_nav{
+  padding-top: 10px;
+}
+.site_nav a{
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  color: white; 
+  float: right;
+  font-size: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.site_nav a:hover{
+  opacity: 1.0;
+  text-decoration: none;
+}

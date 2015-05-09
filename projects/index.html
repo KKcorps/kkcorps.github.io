@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Projects |  @KKcorps</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="An open source app to showcase your open source work (yo dawg)." />
+    <meta name="keywords" content="open source, showcase, gallery, oss, github, EvertythingMe" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://kkcorps.github.io" />
+    <meta property="og:title" content="Projects | @KKcorps" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="http://kkcorps.github.io/img/author.jpg" />
+
+    <link rel="stylesheet" href="static/components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/components/bootstrap-material-design/dist/css/material-fullpalette.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/style.css">
+
+
+  
+  </head>
+  <body>
+
+  <nav class="navbar navbar-material-blue-grey-900 site_nav">
+      <a href="/contact">Contact</a>
+      <a href="/projects">Projects</a>
+      <a href="/about">About</a>
+      <a href="/index.html">Blog</a>
+  </nav>
+
+    <header class="navbar navbar-material-blue-grey-900">
+      <div class="container">
+        <h1><img src="/projects/static/me.jpg" alt="Me" width="116" style="margin-top:22%;"></h1>
+        <div>
+          <h2>Projects</h2>
+          <p>@KKcorps  <a href="https://github.com/KKcorps/">Visit my repo here</a>.</p>
+        </div>
+      </div>
+    </header>
+
+  
+    <div class="navbar navbar-material-blue-grey-900" id="affix">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav" id="tag-filter"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="projects">
+      <div class="gap"></div>
+      <div class="gap"></div>
+    </div>
+  </div>
+
+  <script id="project-template" type="text/x-handlebars-template">
+    {{#projects}}
+    <div class="project mix {{#each tags}}{{ escape name }} {{/each}}" data-myorder="{{ @index }}" id="project-{{ escape name }}">
+      <style>
+        #project-{{ name }} .panel,
+        #project-{{ name }} icon,
+        #project-{{ name }} stars,
+        #project-{{ name }} forks {
+          color: {{ color name }}
+        }
+        #project-{{ name }} .panel,
+        #project-{{ name }} hr,
+        #project-{{ name }} tags button {
+          background-color: {{ color name }};
+        }
+        #project-{{ name }} links a:hover {
+          background-color: rgba({{ rgb name }}, 0.2);
+        }
+      </style>
+      <div class="panel">
+        <panel-heading>
+          <icon class="icon {{ icon_class }}" style="background-image: url({{ icon_url }})"></icon>
+          <div>
+            <title>{{ name }}</title>
+            <stats>
+              {{#if stars_count}}
+              <stars><i class="mdi-action-grade"></i>{{ stars_count }}</stars>
+              {{/if}}
+              {{#if forks_count}}
+              <forks><i class="icon-flow-branch"></i>{{ forks_count }}</forks>
+              {{/if}}
+            </stats>
+          </div>
+          <tags>
+            {{#tags}}
+              <button onclick="app.filter('.{{ escape name }}', true)">{{ name }}</button>
+            {{/tags}}
+          </tags>
+          <hr />
+        </panel-heading>
+        <panel-body>
+          {{ description }}
+          {{#if links}}
+          <links>
+            {{#links}}
+            <a href="{{ url }}" target="_blank" class="btn btn-flat">
+              {{#if class}}
+              <i class="{{ class }}">
+              {{else}}
+              <i class="icon-{{ title }}">
+              {{/if}}
+              </i>{{ title }}
+            </a>
+            {{/links}}
+          </links>
+          {{/if}}
+        </panel-body>
+      </div>
+    </div>
+    {{/projects}}
+  </script>
+
+  <script id="tag-filter-template" type="text/x-handlebars-template">
+    {{#tags}}
+    <li>
+      <a href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse" data-tag=".{{ escape name }}" onclick="app.filter('.{{ escape name }}')">{{ name }}</a>
+    </li>
+    {{/tags}}
+  </script>
+
+
+  <script src="static/components/handlebars/handlebars.min.js"></script>
+  <script src="static/components/underscore/underscore-min.js"></script>
+
+  <script src="static/components/jquery/dist/jquery.min.js"></script>
+  <script src="static/components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="static/components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+  <script src="static/components/bootstrap-material-design/dist/js/material.min.js"></script>
+  <script src="static/components/mixitup/build/jquery.mixitup.min.js"></script>
+  <script src="static/colors.js"></script>
+
+  <link rel="stylesheet" href="static/components/fontello-76a038de/css/fontello.css">
+
+  <script src="data/projects.json"></script>
+  <script src="static/app.js"></script>
+  <script>
+    var app = App();
+  </script>
+</body>
+
+</html>
