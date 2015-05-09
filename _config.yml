@@ -16,6 +16,16 @@ github_username:  KKcorps
 facebook_username: KK.corps
 quora_username: Kartik-Khare
 
+navigation:
+ - title: Blog
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Projects
+   url: /projects
+ - title: Contact
+   url: /contact
+
 # Build settings
 markdown: kramdown
 highlighter: pygments

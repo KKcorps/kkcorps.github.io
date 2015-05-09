@@ -15,14 +15,23 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
+                <!--<li>
                     <a href="{{ site.baseurl }}/">Home</a>
                 </li>
                 {% for page in site.pages %}{% if page.title %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
-                {% endif %}{% endfor %}
+                {% endif %}{% endfor %}-->
+                {% for link in site.navigation %}
+                    {% assign current = nil %}
+                    {% if page.url contains link.url %}
+                        {% assign current = 'current' %}
+                    {% endif %}
+                    <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
         <!-- /.navbar-collapse -->
