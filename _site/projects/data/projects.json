@@ -31,7 +31,7 @@
     "tags": [
       "Windows-Phone"
     ], 
-    "icon_url": "", 
+    "icon_url": "/projects/static/code_fun_do.jpg", 
     "forks_count": 1, 
     "stars_count": 0, 
     "description": "Windows Phone App to help student in lab with observations."
@@ -167,7 +167,7 @@
     "tags": [
       "Web-App"
     ], 
-    "icon_url": "", 
+    "icon_url": "/projects/static/octane.png", 
     "forks_count": 0, 
     "stars_count": 0, 
     "description": "Web tool to manage your Postfix mail server"
@@ -187,7 +187,7 @@
     "tags": [
       "Android"
     ], 
-    "icon_url": "/projects/projects/static/sjain.png", 
+    "icon_url": "/projects/static/sjain.png", 
     "forks_count": 0, 
     "stars_count": 0, 
     "description": "Primitive android app for SJain Ventures.Developed as a pert of my winter internship."

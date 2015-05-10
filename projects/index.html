@@ -25,17 +25,37 @@
   
   </head>
   <body>
-
+<!--
   <nav class="navbar navbar-material-blue-grey-900 site_nav">
+      <div class="container">
+          <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navhead">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+      	  </div>
+
+	      <div class="navbar-collapse navhead collapse navbar-responsive-collapse">
+	          <ul class="nav navbar-nav" style="float:right;">      	
+			      <li><a href="/index.html">Blog</a></li>
+			      <li><a href="/about">About</a></li>
+			      <li><a href="/projects">Projects</a></li>
+			      <li><a href="/contact">Contact</a></li>
+	          </ul>
+	      </div>
+      </div>
+  </nav>-->
+    <nav class="navbar navbar-material-blue-grey-900 site_nav">
       <a href="/contact">Contact</a>
       <a href="/projects">Projects</a>
       <a href="/about">About</a>
       <a href="/index.html">Blog</a>
-  </nav>
+  	</nav>
 
     <header class="navbar navbar-material-blue-grey-900">
       <div class="container">
-        <h1><img src="/projects/static/me.jpg" alt="Me" width="116" style="margin-top:22%;"></h1>
+        <h1><img class="bw" src="/projects/static/me.jpg" alt="Me" width="150" style="margin-top:9%;"></h1>
         <div>
           <h2>Projects</h2>
           <p>@KKcorps  <a href="https://github.com/KKcorps/">Visit my repo here</a>.</p>
@@ -47,13 +67,11 @@
     <div class="navbar navbar-material-blue-grey-900" id="affix">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navtags">
+            <i class="glyphicon glyphicon-th" style="font-size: 16px;color:#fff"></i>
           </button>
         </div>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <div class="navbar-collapse navtags collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav" id="tag-filter"></ul>
         </div>
       </div>
