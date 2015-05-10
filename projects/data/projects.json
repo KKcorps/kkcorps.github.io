@@ -6,12 +6,15 @@
       {
         "url": "https://github.com/KKcorps/DmsInfoSystem", 
         "title": "github"
+      },{
+        "url": "https://play.google.com/store/apps/details?id=com.sjainventures.dms", 
+        "title": "Play Store"
       }
     ], 
     "tags": [
-      "Java"
+      "Android"
     ], 
-    "icon_url": "https://raw.githubusercontent.com/KKcorps/DmsInfoSystem/master/Documents/AndroidstudioProjects/DmsInfoSystem/app/src/main/res/drawable-xhdpi/dmsbutton512160.png", 
+    "icon_url": "/projects/static/dms.png", 
     "forks_count": 0, 
     "stars_count": 1, 
     "description": "Android app of DMS Infosystems created as part of my winter intern project."
@@ -26,7 +29,7 @@
       }
     ], 
     "tags": [
-      "C#"
+      "Windows-Phone"
     ], 
     "icon_url": "", 
     "forks_count": 1, 
@@ -43,12 +46,12 @@
       }
     ], 
     "tags": [
-      "Java"
+      "Android"
     ], 
-    "icon_url": "", 
+    "icon_url": "/projects/static/buildmlearn.png", 
     "forks_count": 0, 
     "stars_count": 0, 
-    "description": "This is a basic implementation of BuildmLearn Basic Learning Template on Android.Work in Progress"
+    "description": "Demo android port of BuildmLearn Toolkit created during GSoC'15 selections for BuildmLearn.org."
   }, 
   {
     "icon_class": "", 
@@ -60,12 +63,12 @@
       }
     ], 
     "tags": [
-      "Java"
+      "Android"
     ], 
     "icon_url": "", 
     "forks_count": 0, 
     "stars_count": 0, 
-    "description": ""
+    "description": "An mpeg-4 sound recorder for android with pause feature."
   },  
   {
     "icon_class": "", 
@@ -77,7 +80,7 @@
       }
     ], 
     "tags": [
-      "Python"
+      "CLI"
     ], 
     "icon_url": "", 
     "forks_count": 0, 
@@ -86,21 +89,38 @@
   }, 
   {
     "icon_class": "", 
-    "name": "Website_KKcorps", 
+    "name": "ShareIITR_WebSite", 
     "links": [
       {
-        "url": "https://github.com/KKcorps/kkcorps.github.io", 
+        "url": "https://github.com/KKcorps/ShareIITR", 
         "title": "github"
       }
     ], 
     "tags": [
-      "JavaScript"
+      "Websites"
     ], 
-    "icon_url": "", 
+    "icon_url": "/projects/static/share.png", 
     "forks_count": 0, 
     "stars_count": 0, 
-    "description": "kkcorps.github.io created with jekyll"
+    "description": "Official Website of Share's IIT Roorkee Chapter"
   }, 
+  {
+    "icon_class": "", 
+    "name": "IFest-2013", 
+    "links": [
+      {
+        "url": "https://github.com/KKcorps/IFest_2013", 
+        "title": "github"
+      }
+    ], 
+    "tags": [
+      "Websites"
+    ], 
+    "icon_url": "/projects/static/ifest.png", 
+    "forks_count": 0, 
+    "stars_count": 0, 
+    "description": "Official website for Ifest 2013, the online techfest of IIT Roorkee"
+  },
   {
     "icon_class": "", 
     "name": "Port-Scanner", 
@@ -111,7 +131,7 @@
       }
     ], 
     "tags": [
-      "JavaScript"
+      "Web-App"
     ], 
     "icon_url": "", 
     "forks_count": 0, 
@@ -128,13 +148,30 @@
       }
     ], 
     "tags": [
-      "Python"
+      "CLI"
     ], 
     "icon_url": "", 
     "forks_count": 0, 
     "stars_count": 0, 
     "description": "A command line software package installer for Linux"
-  }, 
+  },
+  {
+    "icon_class": "", 
+    "name": "Postfix-Monitor", 
+    "links": [
+      {
+        "url": "https://github.com/KKcorps/Postfix-Monitor", 
+        "title": "github"
+      }
+    ], 
+    "tags": [
+      "Web-App"
+    ], 
+    "icon_url": "", 
+    "forks_count": 0, 
+    "stars_count": 0, 
+    "description": "Web tool to manage your Postfix mail server"
+  },
   {
     "icon_class": "", 
     "name": "SjainVentures", 
@@ -142,14 +179,17 @@
       {
         "url": "https://github.com/KKcorps/SjainVentures", 
         "title": "github"
+      },{
+        "url" : "https://play.google.com/store/apps/details?id=com.sjainventures.sjain.activities",
+        "title" : "Play Store"
       }
     ], 
     "tags": [
-      "Java"
+      "Android"
     ], 
-    "icon_url": "", 
+    "icon_url": "/projects/projects/static/sjain.png", 
     "forks_count": 0, 
     "stars_count": 0, 
-    "description": ""
+    "description": "Primitive android app for SJain Ventures.Developed as a pert of my winter internship."
   }
 ]
