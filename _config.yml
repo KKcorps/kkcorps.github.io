@@ -1,5 +1,5 @@
 # Site settings
-title: The Underdog Dev!
+title: 0's and 1's!
 header-img: img/hacker-bg.jpg
 email: kharekartik@gmail.com
 
@@ -7,7 +7,7 @@ name: 'Kartik Khare'
 author: 'Kartik Khare'
 author_image: "/img/author.jpg"
 
-description: "Write your site description here. It will be used as your sites meta description as well!"
+description: "kartik-khare blog"
 baseurl: ""
 url: "http://kkcorps.github.io"
 linkedin_username: kartik-khare/7a/68b/751
@@ -23,8 +23,7 @@ navigation:
    url: /about
  - title: Projects
    url: /projects
- - title: Contact
-   url: /contact
+
 
 # Build settings
 markdown: kramdown
