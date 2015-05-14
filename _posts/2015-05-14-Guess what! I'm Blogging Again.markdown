@@ -14,11 +14,11 @@ header-img: "img/code_fun_do.jpg"
 <p class="section-heading">So what about the old one?</p>
 <p>Ohh I completely forgot about that!!!!</p>
 <p>Just Kidding, actually my old <a href="https://kkcrps.blogspot.com" target="_blank">blog</a> got cluttered with a lot of nonsensical posts and so I thought of starting from scratch.Also, having your own site is way much cooler.</p>
-<p class="section-heading">Anything else?</p>
+<p class="section-heading nope">Anything else?</p>
 <p>Not really but since I don't have much to do right now here's a poem for you
 <blockquote>Roses are red,<br>
 Sky is blue,<br>
-Click <a href="">Here</a> for more,<br>
+Click <a href=".nope">Here</a> for more,<br>
 Ya I got you<br>
 HAHAHA...</blockquote></p>
 
