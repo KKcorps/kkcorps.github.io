@@ -204,7 +204,7 @@
     "tags": [
       "Android"
     ], 
-    "icon_url": "/projects/static/printvenue.png", 
+    "icon_url": "/projects/static/printvenue_small.png", 
     "forks_count": 0, 
     "stars_count": 0, 
     "description": "Implemented User guide and My profile section in Printvenue app."
