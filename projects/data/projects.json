@@ -123,40 +123,6 @@
   },
   {
     "icon_class": "", 
-    "name": "Port-Scanner", 
-    "links": [
-      {
-        "url": "https://github.com/KKcorps/Port-Scanner", 
-        "title": "github"
-      }
-    ], 
-    "tags": [
-      "Web-App"
-    ], 
-    "icon_url": "", 
-    "forks_count": 0, 
-    "stars_count": 0, 
-    "description": "This is a basic port Scanner written in node.js.Just execute the bash script port.sh.In the browser window that opens working ports are marked green and closed ones are red. "
-  }, 
-  {
-    "icon_class": "", 
-    "name": "pyzard", 
-    "links": [
-      {
-        "url": "https://github.com/KKcorps/pyzard", 
-        "title": "github"
-      }
-    ], 
-    "tags": [
-      "CLI"
-    ], 
-    "icon_url": "", 
-    "forks_count": 0, 
-    "stars_count": 0, 
-    "description": "A command line software package installer for Linux"
-  },
-  {
-    "icon_class": "", 
     "name": "Postfix-Monitor", 
     "links": [
       {
@@ -207,7 +173,7 @@
     "icon_url": "/projects/static/printvenue_small.png", 
     "forks_count": 0, 
     "stars_count": 0, 
-    "description": "Implemented User guide and My profile section in Printvenue app."
+    "description": "Implemented User guide and My profile section in Printvenue app. Also developed the customer feedback system along with the android application."
   },
   {
     "icon_class": "", 
@@ -225,5 +191,39 @@
     "forks_count": 0, 
     "stars_count": 0, 
     "description": "Worked on a new startup with one of the biggets enterpreneur in India. Responsible for the development of API for the platform in laravel and adding multiple features to the existing web application."
+  },
+  {
+    "icon_class": "", 
+    "name": "Port-Scanner", 
+    "links": [
+      {
+        "url": "https://github.com/KKcorps/Port-Scanner", 
+        "title": "github"
+      }
+    ], 
+    "tags": [
+      "Web-App"
+    ], 
+    "icon_url": "", 
+    "forks_count": 0, 
+    "stars_count": 0, 
+    "description": "This is a basic port Scanner written in node.js.Just execute the bash script port.sh.In the browser window that opens working ports are marked green and closed ones are red. "
+  }, 
+  {
+    "icon_class": "", 
+    "name": "pyzard", 
+    "links": [
+      {
+        "url": "https://github.com/KKcorps/pyzard", 
+        "title": "github"
+      }
+    ], 
+    "tags": [
+      "CLI"
+    ], 
+    "icon_url": "", 
+    "forks_count": 0, 
+    "stars_count": 0, 
+    "description": "A command line software package installer for Linux"
   }
 ]
